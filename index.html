@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Website</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <nav class="container flex justify-between items-center mx-auto py-3">
+      <!-- logo -->
+      <div>
+        <a href="#" class="text-3xl font-bold">Tailwind css</a>
+      </div>
+      <!-- menu -->
+      <ul class="hidden md:flex items-center">
+        <li class="nav-menu py-2 hover:bg-green-200 rounded">
+          <a href="#" class="text-md font-bold text-black-400 px-4">Home</a>
+        </li>
+        <li class="nav-menu py-2 hover:bg-green-200 rounded">
+          <a href="#" class="text-md font-bold text-black-400 px-4">About</a>
+        </li>
+        <li class="nav-menu py-2 hover:bg-green-200 rounded">
+          <a href="#" class="text-md font-bold text-black-400 px-4">Blogs</a>
+        </li>
+        <li class="nav-menu py-2 hover:bg-green-200 rounded">
+          <a href="#" class="text-md font-bold text-black-400 px-4">Contact</a>
+        </li>
+        <li
+          class="nav-menu py-2 bg-green-600 ml-2 hover:bg-green-800 py-2 rounded"
+        >
+          <a href="#" class="text-md font-bold text-black-400 px-4 text-white"
+            >Login</a
+          >
+        </li>
+      </ul>
+      <div class="block md:hidden">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </div>
+    </nav>
+    <!-- banner section  -->
+    <section class="banner">
+      <div
+        class="container mx-auto flex flex-col-reverse md:flex-row justify-between items-center"
+      >
+        <!-- left -->
+        <div
+          class="flex flex-col w-full md:w-2/5 p-4 animate__animated animate__jackInTheBox"
+        >
+          <!-- heading -->
+          <h1 class="text-4xl">
+            Welcome to
+            <span class="text-green-500 font-bold">Tailwind css</span> Website
+          </h1>
+          <!-- text -->
+          <p>
+            I’ve written a few thousand words on why traditional “semantic class
+            names” are the reason CSS is hard to maintain, but the truth is
+            you’re never going
+          </p>
+          <!-- buttons -->
+          <div>
+            <button class="bg-green-600 px-3 py-2 text-white rounded-sm my-3">
+              Subscribe
+            </button>
+            <button class="bg-gray-300 px-3 py-2 my-3 rounded-sm ml-4">
+              Connect With us
+            </button>
+          </div>
+          <!-- social icons -->
+          <div class="">
+            <img src="./images/icon.png" class="" alt="" />
+          </div>
+        </div>
+        <!-- right -->
+        <div
+          class="flex flex-col w-full md:w-3/5 animate__animated animate__fadeIn animate__delay-2s"
+        >
+          <img src="./images/img4.png" class="" alt="" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
